@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Free guides | yankii_scientist</title>
+<meta name="description" content="Free, plain-English AI guides from the reels on @yankii_scientist. Filter by topic or AI tool.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../index.html">yankii<span>_</span>scientist</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../guides/index.html" aria-current="page">Free guides</a></li>
+    <li><a href="../contact/index.html">Contact</a></li>
+  </ul></nav>
+</div></header>
+<main id="main">
+<section class="page-head wrap">
+  <h1>Free guides</h1>
+  <p>Step-by-step AI guides for people who don't code. Each one comes from a reel.</p>
+  <div class="note"><p>Guides are sent by DM. Comment the keyword under the reel on <a href="https://www.instagram.com/yankii_scientist/">@yankii_scientist</a> and the guide lands in your inbox.</p></div>
+</section>
+<section class="wrap" aria-label="Guide library">
+  <div class="filters" id="filters" hidden>
+    <div><label for="f-topic">Topic</label><select id="f-topic"><option value="">All topics</option></select></div>
+    <div><label for="f-tool">AI tool</label><select id="f-tool"><option value="">All tools</option></select></div>
+  </div>
+  <p class="count" id="count" role="status" aria-live="polite" hidden></p>
+  <ul class="grid" id="grid"></ul>
+  <div class="empty" id="empty">
+    <h2>New guides drop with every reel</h2>
+    <p>Nothing here yet. Follow <a href="https://www.instagram.com/yankii_scientist/">@yankii_scientist</a> and the next guide will show up on this page.</p>
+  </div>
+  <div class="empty" id="nomatch" hidden>
+    <h2>No guides match those filters</h2>
+    <p>Try a different topic or tool, or reset both to see everything.</p>
+  </div>
+</section>
+</main>
+<footer class="site"><div class="wrap">
+  <span>&copy; <span id="yr">2026</span> yankii_scientist</span>
+  <span>Find me on <a href="https://www.instagram.com/yankii_scientist/">Instagram</a></span>
+</div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="guides.js"></script><script src="app.js"></script></body></html>
